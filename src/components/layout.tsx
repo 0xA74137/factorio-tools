@@ -38,9 +38,9 @@ export default function Page({ ...props }: React.ComponentProps<"div">) {
             </BreadcrumbList>
           </Breadcrumb>
         </header> */}
-        <div className="flex flex-1 flex-col gap-4 p-4">
+        <main className="flex flex-1">
           { props.children }
-        </div>
+        </main>
       </SidebarInset>
     </SidebarProvider>
   )
