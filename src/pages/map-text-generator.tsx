@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { encodeBlueprint } from "@/lib/factorio-blueprints";
+import { newBlueprint } from "@/lib/factorio-blueprints/factory";
 import { drawBitmapText } from "@/lib/utils";
 
 
@@ -8,6 +9,8 @@ export function MapTextGenerator() {
   const handleButtonClick = () => {
     drawBitmapText("Hello world!", "/factorio-tools/fonts/bitocra/bitbuntu.bdf")
       .then(x => console.log(x));
+
+    const bp = newBlueprint("text");
 
     // console.log(renderedText);
   }
