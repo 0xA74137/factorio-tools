@@ -1,4 +1,4 @@
-import type { Blueprint } from './data/Blueprint'
+import type { Blueprint, WrappedBlueprint } from './data/Blueprint'
 import type { BlueprintBook } from './data/BlueprintBook'
 
 export const newBlueprint = (name: string): Blueprint => {
@@ -8,6 +8,12 @@ export const newBlueprint = (name: string): Blueprint => {
     entities: [],
     tiles: [],
     version: 1,
+  }
+}
+
+export const newWrappedBlueprint = (name: string): WrappedBlueprint => {
+  return {
+    blueprint: newBlueprint(name)
   }
 }
 

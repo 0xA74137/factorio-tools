@@ -6,5 +6,5 @@ export interface SignalID {
   /**
    * Type of the signal. Either "item", "fluid" or "virtual".
    */
-  type: string;
+  type: "item" | "fluid" | "virtual";
 }
