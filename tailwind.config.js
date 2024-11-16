@@ -1,3 +1,5 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 /** @type {import('tailwindcss').Config} */
 export default {
     darkMode: ["class"],
@@ -60,7 +62,10 @@ export default {
   				border: 'hsl(var(--sidebar-border))',
   				ring: 'hsl(var(--sidebar-ring))'
   			}
-  		}
+  		},
+			fontFamily: {
+				'sans': ['"Titillium Web"', ...defaultTheme.fontFamily.sans],
+			}
   	}
   },
   plugins: [require("tailwindcss-animate")],

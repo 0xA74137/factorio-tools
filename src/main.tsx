@@ -1,7 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import './index.css'
+import './style/index.css'
 import AppLayout from '@/components/layout'
 import { ThemeProvider } from './components/theme-provider'
 import { MapTextGenerator } from './pages/map-text-generator'

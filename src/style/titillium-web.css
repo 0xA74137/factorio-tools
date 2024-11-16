@@ -1,0 +1,25 @@
+@layer base {
+  @each $name, $weight in 
+    (ExtraLight, Light, Regular, SemiBold, Bold, Black),
+    (200, 300, 400, 600, 700, 900)
+  {
+    @font-face {
+      font-family: 'Titillium Web';
+      font-style: normal;
+      font-weight: $weight;
+      src: url('/factorio-tools/ttf/TitilliumWeb-$(name).ttf') format('woff2');
+    }
+  }
+
+  @each $name, $weight in 
+    (ExtraLightItalic, LightItalic, Italic, SemiBoldItalic, BoldItalic),
+    (200, 300, 400, 600, 700)
+  {
+    @font-face {
+      font-family: 'Titillium Web';
+      font-style: italic;
+      font-weight: $weight;
+      src: url('/factorio-tools/ttf/TitilliumWeb-$(name).ttf') format('woff2');
+    }
+  }
+}
